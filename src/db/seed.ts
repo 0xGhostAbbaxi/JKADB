@@ -1,6 +1,4 @@
-import { config } from "dotenv";
-config();
-config({ path: ".env.local", override: true });
+import "./load-env";
 import { db } from "./index";
 import {
   districts,
