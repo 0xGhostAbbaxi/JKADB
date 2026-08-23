@@ -1,4 +1,6 @@
-require("dotenv/config");
+const { config } = require("dotenv");
+config();
+config({ path: ".env.local", override: true });
 const { Pool } = require("pg");
 
 async function main() {
